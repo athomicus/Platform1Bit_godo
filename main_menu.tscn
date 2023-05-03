@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=3 uid="uid://dvd7ta6uqxtv2"]
+
+[ext_resource type="Script" path="res://main_menu.gd" id="1_l4wvw"]
+
+[node name="MainMenu" type="Node2D"]
+script = ExtResource("1_l4wvw")
+
+[node name="Label" type="Label" parent="."]
+offset_left = -1.0
+offset_top = 11.0
+offset_right = 1144.0
+offset_bottom = 53.0
+theme_type_variation = &"HeaderLarge"
+text = "2D Platform"
+horizontal_alignment = 1
+
+[node name="StartButton" type="Button" parent="."]
+offset_left = 525.0
+offset_top = 198.0
+offset_right = 637.0
+offset_bottom = 245.0
+text = "Start"
+
+[connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
