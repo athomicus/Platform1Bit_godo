@@ -6,19 +6,19 @@
 script = ExtResource("1_l4wvw")
 
 [node name="Label" type="Label" parent="."]
-offset_left = -1.0
-offset_top = 11.0
-offset_right = 1144.0
-offset_bottom = 53.0
+offset_left = 5.0
+offset_top = 155.0
+offset_right = 960.0
+offset_bottom = 197.0
 theme_type_variation = &"HeaderLarge"
 text = "2D Platform"
 horizontal_alignment = 1
 
 [node name="StartButton" type="Button" parent="."]
-offset_left = 525.0
-offset_top = 198.0
-offset_right = 637.0
-offset_bottom = 245.0
+offset_left = 435.0
+offset_top = 295.0
+offset_right = 547.0
+offset_bottom = 342.0
 text = "Start"
 
 [connection signal="pressed" from="StartButton" to="." method="_on_start_button_pressed"]
