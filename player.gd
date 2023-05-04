@@ -21,7 +21,8 @@ func _physics_process(delta):
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var direction = Input.get_axis("ui_left", "ui_right") # -1 lub 0 lub 1
-	if direction:
+	
+	if direction != 0: 
 		
 		velocity.x = direction * SPEED
 		$AnimatedSprite2D.play("run")
