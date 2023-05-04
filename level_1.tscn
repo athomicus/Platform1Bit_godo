@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://bkuuus0dud2lt"]
+[gd_scene load_steps=8 format=3 uid="uid://bkuuus0dud2lt"]
 
 [ext_resource type="Script" path="res://level_1.gd" id="1_wk5ic"]
+[ext_resource type="PackedScene" uid="uid://jmgu6gcdnege" path="res://gem.tscn" id="2_8yqwm"]
 [ext_resource type="Texture2D" uid="uid://dsq6t6h7on5mg" path="res://monochrome_tilemap_transparent.png" id="2_mj882"]
 [ext_resource type="PackedScene" uid="uid://b82qdi8wa6lbq" path="res://player.tscn" id="3_k6qwe"]
 [ext_resource type="PackedScene" uid="uid://b56gbfw3lw4bq" path="res://door.tscn" id="4_oopx5"]
@@ -1348,6 +1349,9 @@ sources/0 = SubResource("TileSetAtlasSource_oxjck")
 
 [node name="Level1" type="Node2D"]
 script = ExtResource("1_wk5ic")
+
+[node name="Gem" parent="." instance=ExtResource("2_8yqwm")]
+position = Vector2(146, 196)
 
 [node name="Label" type="Label" parent="."]
 offset_left = 83.0
