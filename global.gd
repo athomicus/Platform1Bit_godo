@@ -1,6 +1,7 @@
 extends Node
 
 var gems_collected = 0 
+var currentLevel = 1
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
