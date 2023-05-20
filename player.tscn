@@ -1,7 +1,8 @@
-[gd_scene load_steps=13 format=3 uid="uid://b82qdi8wa6lbq"]
+[gd_scene load_steps=14 format=3 uid="uid://b82qdi8wa6lbq"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_vex1f"]
 [ext_resource type="Texture2D" uid="uid://dsq6t6h7on5mg" path="res://monochrome_tilemap_transparent.png" id="2_6i3fe"]
+[ext_resource type="AudioStream" uid="uid://rwss6nn7anod" path="res://jump.wav" id="3_cj5st"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_m8qk3"]
 atlas = ExtResource("2_6i3fe")
@@ -101,3 +102,6 @@ limit_smoothed = true
 position_smoothing_enabled = true
 drag_horizontal_enabled = true
 drag_vertical_enabled = true
+
+[node name="Jump" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_cj5st")

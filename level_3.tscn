@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://b82vrv554xwbl"]
+[gd_scene load_steps=9 format=3 uid="uid://b82vrv554xwbl"]
 
 [ext_resource type="Script" path="res://levels.gd" id="1_6yhso"]
 [ext_resource type="Texture2D" uid="uid://dsq6t6h7on5mg" path="res://monochrome_tilemap_transparent.png" id="1_h8g7f"]
 [ext_resource type="PackedScene" uid="uid://b82qdi8wa6lbq" path="res://player.tscn" id="2_x13yp"]
 [ext_resource type="PackedScene" uid="uid://jmgu6gcdnege" path="res://gem.tscn" id="3_mwwrw"]
 [ext_resource type="PackedScene" uid="uid://b56gbfw3lw4bq" path="res://door.tscn" id="4_0jsyh"]
+[ext_resource type="AudioStream" uid="uid://cs47q11d4htn3" path="res://triangular ideology-the fan sequel.ogg" id="6_k4h2a"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_oxjck"]
 resource_name = "myTilemap"
@@ -1387,5 +1388,10 @@ text = "Gems: 0"
 
 [node name="Door" parent="." instance=ExtResource("4_0jsyh")]
 position = Vector2(664, 264)
+
+[node name="Music" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_k4h2a")
+volume_db = -1.0
+autoplay = true
 
 [connection signal="body_entered" from="Door" to="." method="_on_door_body_entered"]

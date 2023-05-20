@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b3v8e4t2ysaxo"
+path="res://.godot/imported/puppy playing in the garden SMS (different drums).ogg-f82900a6897ff9a8b7aa7aa693a5a06c.oggvorbisstr"
+
+[deps]
+
+source_file="res://puppy playing in the garden SMS (different drums).ogg"
+dest_files=["res://.godot/imported/puppy playing in the garden SMS (different drums).ogg-f82900a6897ff9a8b7aa7aa693a5a06c.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

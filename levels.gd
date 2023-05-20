@@ -15,8 +15,11 @@ func _ready():
 
 func _input(event):
 	if event.is_action_pressed("reset_level"):
-		get_tree().reload_current_scene.call_deferred() #
 		Global.gems_collected = 0
+		set_gems_label()
+		Global.currentLevel -=1 
+		get_tree().reload_current_scene.call_deferred() #
+		
 		#get_tree().reload_current_scene()
 
  

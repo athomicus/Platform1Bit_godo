@@ -9,4 +9,9 @@ func _on_body_entered(body):
 		Global.gems_collected +=1
 		#print("Gem",Global.gems_collected )
 		gem_collected_signal.emit()
-		queue_free()
+		$AudioStreamPlayer.play()
+		hide()
+
+
+func _on_audio_stream_player_finished():
+	queue_free()
